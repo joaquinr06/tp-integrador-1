@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Licuadora",
+        "description": "Licuadora 3 velocidades, 800Wtts de potencia",
+        "price": 9999,
+        "discount": null,
+        "image": "img-Licuadora.jpg",
+        "category": "visited"
+    },
+    {
+        "id": 2,
+        "name": "Celular",
+        "description": "Celular Samsung A52",
+        "price": 69000,
+        "discount": 5,
+        "image": "img-celularA52.jpg",
+        "category": "Phone"
+    },
+    {
+        "id": 3,
+        "name": "Lavarropas LG",
+        "description": "Lavarropas LG",
+        "price": 110000,
+        "discount": null,
+        "image": "img-lavarropasLG.jpg",
+        "category": "visited"
+    },
+    {
+        "id": 4,
+        "name": "Lavarropas Samsung",
+        "description": "Lavarropas Samsung",
+        "price": 112000,
+        "discount": 8,
+        "image": "img-lavarropasSamsung.jpg",
+        "category": "visited"
+    },
+    {
+        "id": 5,
+        "name": "Guitarra Fender",
+        "description": "Guitarra Fender Stratocaster Sunburst",
+        "price": 670000,
+        "discount": null,
+        "image": "img-fender.jpg",
+        "category": "Guitar"
+    },
+    {
+        "id": 6,
+        "name": "Gibson SG 57'",
+        "description": "Gibson Les Paul año 1957 Gold",
+        "price": 1200000,
+        "discount": null,
+        "image": "img-gibsonLp.jpg",
+        "category": "visited"
+    },
+    {
+        "id": 7,
+        "name": "Shecter Omen 6 ",
+        "description": "Guitarra Shecter Omen 6 black",
+        "price": 354697,
+        "discount": null,
+        "image": "img-guitarrast.jpg",
+        "category": "Guitar"
+    },
+    {
+        "id": 8,
+        "name": "LG TV 32 pulgadas",
+        "description": "LG TV 32 pulgadas",
+        "price": 60120,
+        "discount": null,
+        "image": "img-lgtv.jpg",
+        "category": "visited"
+    },
+    {
+        "id": 9,
+        "name": "Samsung S23",
+        "description": "Samsung S23 Blanco",
+        "price": 334000,
+        "discount": null,
+        "image": "img-S23.jpg",
+        "category": "Phone"
+    },
+    {
+        "id": 10,
+        "name": "Prueba",
+        "price": 9999,
+        "discount": null,
+        "category": "visited",
+        "description": "hola mundo",
+        "image": "img-Licuadora.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Prueba",
+        "price": 9999,
+        "discount": null,
+        "category": "visited",
+        "description": "hola mundo",
+        "image": "img-Licuadora.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Prueba",
+        "price": 9999,
+        "discount": null,
+        "category": "visited",
+        "description": "hola mundo",
+        "image": "img-Licuadora.jpg"
+    }
+]
