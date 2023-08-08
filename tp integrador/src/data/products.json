@@ -59,7 +59,7 @@
         "description": "Guitarra Shecter Omen 6 black",
         "price": 354697,
         "discount": null,
-        "image": "img-guitarrast.jpg",
+        "image": "http://localhost:3000/images/omen6.png",
         "category": "Guitar"
     },
     {
@@ -79,32 +79,5 @@
         "discount": null,
         "image": "img-S23.jpg",
         "category": "Phone"
-    },
-    {
-        "id": 10,
-        "name": "Prueba",
-        "price": 9999,
-        "discount": null,
-        "category": "visited",
-        "description": "hola mundo",
-        "image": "img-Licuadora.jpg"
-    },
-    {
-        "id": 11,
-        "name": "Prueba",
-        "price": 9999,
-        "discount": null,
-        "category": "visited",
-        "description": "hola mundo",
-        "image": "img-Licuadora.jpg"
-    },
-    {
-        "id": 12,
-        "name": "Prueba",
-        "price": 9999,
-        "discount": null,
-        "category": "visited",
-        "description": "hola mundo",
-        "image": "img-Licuadora.jpg"
     }
 ]

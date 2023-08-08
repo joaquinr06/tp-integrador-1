@@ -3,7 +3,7 @@ const fs = require('fs');
 
 
 const ruta = path.resolve(__dirname, '../data/products.json');
-const jsonProducts = fs.readFileSync(ruta, {encoding: 'utf-8'});
+const jsonProducts = fs.readFileSync(ruta, { encoding: 'utf-8' });
 let products = JSON.parse(jsonProducts);
 
 
@@ -11,8 +11,16 @@ let products = JSON.parse(jsonProducts);
 const productController = {
     crear: (req, res) => {
         let product = {};
-        if (!req.body.name) {
-            return res.json({mgs: 'el campo Name es required'});
+        if (req.body.name == '') {
+            return res.json({ mgs: 'el campo Name es requerido' });
+        } else if (req.body.price == '') {
+            return res.json({ mgs: 'el campo Price es requerido' });
+        } else if (req.body.category == '') {
+            return res.json({ mgs: 'el campo Category es requerido' });
+        } else if (req.body.description == '') {
+            return res.json({ mgs: 'el campo Description es requerido' });
+        } else if (req.body.image == '') {
+            return res.json({ mgs: 'el campo Image es requerido' });
         }
         product.id = products.length + 1
         product.name = req.body.name;
@@ -25,20 +33,17 @@ const productController = {
 
         let productsJson = JSON.stringify(products, null, 4);
 
-        fs.writeFileSync(ruta, productsJson,{encoding: 'utf-8'});
+        fs.writeFileSync(ruta, productsJson, { encoding: 'utf-8' });
         res.status(201).json(product);
 
     },
     listar: (req, res) => {
         res.json(products);
     },
-    detalle: (req, res) => {
-        res.json('detalle de un producto');
-    },
-    id: (req, res) =>{
-         let id = +req.params.id;
-         let producto = products.filter(product => product.id == id);
-         res.json(producto);
+    id: (req, res) => {
+        let id = +req.params.id;
+        let producto = products.filter(product => product.id == id);
+        res.json(producto);
     }
 }
 

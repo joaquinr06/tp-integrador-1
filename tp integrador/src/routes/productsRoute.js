@@ -1,12 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/productsController')
+const upload = require('../middlewares/Multer')
+const logs = require('../logs/logs')
 
 
-router.get('/listar', controller.listar);
-router.get('/detalle', controller.detalle);
-router.get('/:id', controller.id);
-router.post('/crear', controller.crear);
+router.get('/listar', logs, controller.listar);
+router.get('/:id', logs, controller.id);
+router.post('/crear', logs, upload.any(), controller.crear);
 
 
 
